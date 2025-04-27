@@ -43,7 +43,7 @@ def video_processing():
 
 
         cv2.imshow('frame', frame)
-        if cv2.waitKey(1) & 0xFF == ord('q'):
+        if cv2.waitKey(20) & 0xFF == 27:
             cv2.destroyAllWindows()
             break
 
